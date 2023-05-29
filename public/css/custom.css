@@ -1,0 +1,13 @@
+.navbar-green {
+    background-color: #003300!important;
+}
+
+.navlink-white{
+    color: white!important;
+}
+
+.navlink-white:hover{
+    color: white!important;
+    font-weight: bold!important;
+    text-decoration: underline;
+}
