@@ -5,6 +5,7 @@
     {{-- Welcome page white the website is opened --}}
 
     {{-- Write your designs here --}}
+    WELCOME
 
 
 @endsection

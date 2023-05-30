@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Route;
 
 class HomeController extends Controller
 {
@@ -35,9 +36,29 @@ class HomeController extends Controller
                 ->first(); // Retrieve the first matching row
 
         if ($result->role == 0) {
-            return view('pages.profile.add_info');
+            return redirect()->route('verify');
         }else{
             return view('home');
+        }
+    }
+
+    public function verify(){
+        return view('pages.profile.add_info');
+    }
+
+    public function insert_info(Request $request){
+        $validator = Validator::make($request->all(), [
+            'address' => 'required',
+            'mobile' => 'required',
+            'birthdate' => 'required',
+            'course' => 'required',
+            'image' => 'required|image',
+            'department' => 'required',
+            'cor' => 'required|file'
+        ]);
+    
+        if ($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput();
         }
     }
 

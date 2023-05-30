@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 
 /*
@@ -15,10 +16,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    // Retrieve the currently authenticated user's ID...
+    if(Auth::check()){
+        return redirect()->route('home');
+    }
     return view('welcome');
 });
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/verify', [App\Http\Controllers\HomeController::class, 'verify'])->name('verify');
+
+Route::post('/insert_info', [App\Http\Controllers\HomeController::class, 'insert_info'])->name('insert_info');
 
