@@ -1,0 +1,58 @@
+
+>>> Install XAMPP
+    https://www.apachefriends.org/download.html
+
+>>> Install Composer
+    https://getcomposer.org/download/
+
+>>> Install NodeJS
+    https://nodejs.org/en/download
+
+>>> Clone the project in the GitHub repository
+    https://github.com/JosephAndreyDacera/Peercademy.git
+
+1. Start your XAMPP server
+2. Open your browser and search for http://localhost/phpmyadmin/
+3. Create a new database and name it "peer_academy"
+4. 
+
+
+
+//========================================================================================//
+//========================================================================================//
+//========================================================================================//
+
+Department Admin Side
+
+>>> Department admins CRUD subjects 
+>>> After the student fill up the form, department admins will verify the student. 
+>>> Department admins approved or decline the application
+>>> View all tutor
+>>> View tutors tutees
+>>> View Tutor Reviews and Ratings                [Review Table: ID, tutorID, tuteeID, Comment, Rating, timestamp]
+>>> 
+
+Student Side
+>>> Student offers subject to tutor
+>>> Can CRUD topics/lessons
+>>> Can CRUD multiple choice quiz                 [MultQuiz Table: ID, taken_sub_ID] [Quiz: ID, Quiz name, Score] [Question: quiz ID, question] [Answers: ID , Quiz ID, Answer, state]
+>>> Can CRUD essay quiz                           [Essay: Quiz ID, Question, Answer, Score]
+>>> Can CRUD Learning Task                        [LT: ID, Instruction, Submission File]
+
+>>> Student apply as tutee for a certain subject and certain mentor
+>>> Tutor approve or decline application
+>>> Can view lessons/topics
+>>> Can answer multiple choice quiz
+>>> Can answer essay quiz
+>>> Can submit Learning Task
+>>> Can rate and review tutors
+>>> 
+
+    Dashboard
+    >>> Display enrolled courses
+    >>> Next section display top rated courses
+    >>> Top rated tutors
+    >>> Footer
+
+
+

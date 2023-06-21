@@ -26,7 +26,7 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-    {
+    {                                            
         // Retrieve the currently authenticated user's ID...
         $id = Auth::id();
 
@@ -34,7 +34,7 @@ class HomeController extends Controller
                 ->select('role') // Specify the attribute you want to retrieve
                 ->where('id', $id) // Add any necessary conditions
                 ->first(); // Retrieve the first matching row
-
+                                              
         if ($result->role == 0) {
             return redirect()->route('verify');
         }else{

@@ -123,6 +123,16 @@ class DatabaseSeeder extends Seeder
                 'crs_acro' => 'BSCS',
                 'dept_id' => 1,
             ],
+            [
+                'course' => 'Bachelor of Science in Civil Engineering',
+                'crs_acro' => 'BSCE',
+                'dept_id' => 2,
+            ],
+            [
+                'course' => 'Bachelor of Science in Agricultural and Biosystems Engineering',
+                'crs_acro' => 'BSABE',
+                'dept_id' => 3,
+            ],
         );
 
         
@@ -134,6 +144,14 @@ class DatabaseSeeder extends Seeder
             [
                 'department' => 'Department of Computer Science and Technology',
                 'dept_acro' => 'DCST',
+            ],
+            [
+                'department' => 'Department of Civil Engineering',
+                'dept_acro' => 'DCE',
+            ],
+            [
+                'department' => 'Department of Agricultural and Biosystems Engineering',
+                'dept_acro' => 'DABE',
             ],
         );
 
@@ -174,8 +192,8 @@ class DatabaseSeeder extends Seeder
                 'mobile' => '+639876543210',
                 'image' => 'default.png',
                 'birthdate' => '05/11/1998',
-                'crs_id' => 1,
-                'dept_id' => 1,
+                'crs_id' => 2,
+                'dept_id' => 2,
                 'cor' => 'givacor.pdf',
                 'bio' => 'Fitness enthusiast and certified personal trainer. Helping individuals achieve their health and wellness goals is my mission.',
                 'created_at' => $now,
@@ -187,8 +205,8 @@ class DatabaseSeeder extends Seeder
                 'mobile' => '+639345678912',
                 'image' => 'default.png',
                 'birthdate' => '18/09/1976',
-                'crs_id' => 1,
-                'dept_id' => 1,
+                'crs_id' => 2,
+                'dept_id' => 2,
                 'cor' => 'cagapecor.pdf',
                 'bio' => 'A dedicated educator shaping young minds. Creating a nurturing environment for learning and growth is my utmost priority.',
                 'created_at' => $now,
@@ -226,8 +244,8 @@ class DatabaseSeeder extends Seeder
                 'mobile' => '+639678901234',
                 'image' => 'default.png',
                 'birthdate' => 07/12/1983,
-                'crs_id' => 1,
-                'dept_id' => 1,
+                'crs_id' =>3,
+                'dept_id' => 3,
                 'cor' => 'cazarcor.pdf',
                 'bio' => 'Musician and composer. Expressing emotions through melodies and harmonies, creating a soundtrack for life.',
                 'created_at' => $now,
@@ -265,8 +283,8 @@ class DatabaseSeeder extends Seeder
                 'mobile' => '+639456789012',
                 'image' => 'default.png',
                 'birthdate' => '14/08/1979',
-                'crs_id' => 1,
-                'dept_id' => 1,
+                'crs_id' => 3,
+                'dept_id' => 3,
                 'cor' => 'rodriguezcor.pdf',
                 'bio' => 'Animal rights advocate and volunteer at local shelters. Devoted to the well-being and protection of our furry friends.',
                 'created_at' => $now,
