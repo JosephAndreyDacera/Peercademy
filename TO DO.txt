@@ -1,0 +1,81 @@
+
+Please put check mark if completed
+    (✓)
+
+
+=========================================
+>>> WELCOME PAGE
+=========================================
+    (✓) Login
+    (✓) Register
+
+
+=========================================
+>>> DASHBOARD
+=========================================
+    Section A
+        Tab 1 (Enrolled)
+            Displays enrolled subjects by the user
+            Once subject is clicked will be redirected to -subject page-
+            Subject Page (Mentees perspective)
+                Can view topics 
+                Can view meeting links
+                Can view/download files 
+                Can answer quizes
+
+        Tab 2 (Offered)
+            Displays offered subjects by the user
+            Once subject is clicked will be redirected to -subject page-
+            Subject Page (Mentors perspective)
+                Can view/create/update/delete 
+                    Topics
+                    Quizes
+                    Upload files
+                    Meeting links
+
+    Section B
+        Displays 5 top rated tutors
+        Once tutor is clicked will be redirected to -tutor profile page-
+        Tutor Profile
+            Displays tutor public information
+            Displays tutor offered subjects
+                Once clicked will displays reviews and Ratings
+    
+    Section C
+        Displays 5 top enrolled subjects 
+
+    Section D
+        Displays 10 subjects with [View More] button
+        [View More] 
+
+
+=========================================
+>>> DEPARTMENT
+=========================================
+    Right Navigation
+        Student Tutors
+        Subjects
+        Student Verification
+        Tutor Application
+
+    Student Tutors
+        Displays student tutors that offered department's subject
+            Once clicked will display all metees under this subject
+            Displays all topics/quizes under the subject
+    
+    Subjects
+        View/Create/Update/Delete subjects that are offered under the department
+    
+    Student Verification
+        Once the student registered under the department, the department will verify the student
+        Here will display all application
+        Once clicked will view registrants information and admins will verify and approved or decline the application
+    
+    Tutor Application
+        When tutors apply to offer subject under the department, application will display here
+        Admins will approved or decline thier application 
+
+
+
+
+

@@ -20,9 +20,6 @@ return new class extends Migration
             $table->integer('status')->default(0); // [0] - pending   [1] - verified   [2] - declined
             $table->string('cor');
             $table->text('bio');
-            // $table->unsignedBigInteger('user_id');
-            // $table->unsignedBigInteger('dept_id');
-            // $table->unsignedBigInteger('crs_id');
             $table->foreignId('user_id')
             ->constrained('users')
             ->onUpdate('cascade')
