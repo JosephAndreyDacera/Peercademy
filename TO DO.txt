@@ -11,7 +11,7 @@ Please put check mark if completed
 
 
 =========================================
->>> DASHBOARD
+>>> STUDENT DASHBOARD
 =========================================
     Section A
         Tab 1 (Enrolled)
@@ -52,6 +52,10 @@ Please put check mark if completed
 =========================================
 >>> DEPARTMENT
 =========================================
+    Dashboard
+        Diplays Total number of subjects Offered
+        Diplays Total number of tutors that offers department Subjects
+
     Right Navigation
         Student Tutors
         Subjects
@@ -75,6 +79,11 @@ Please put check mark if completed
         When tutors apply to offer subject under the department, application will display here
         Admins will approved or decline thier application 
 
+
+
+=========================================
+>>> 
+=========================================
 
 
 
